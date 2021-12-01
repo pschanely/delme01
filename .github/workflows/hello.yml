@@ -1,10 +1,12 @@
 name: Run Integration Tests
 
+on: [workflow_dispatch]
+
 env:
-  INTEGRATION_TEST_CLIENT_SECRET:
-  INTEGRATION_TEST_USER_PASSWORD:
-  STREAM_API_KEY:
-  STREAM_API_SECRET:
+  INTEGRATION_TEST_CLIENT_SECRET: ""
+  INTEGRATION_TEST_USER_PASSWORD: ""
+  STREAM_API_KEY: ""
+  STREAM_API_SECRET: ""
 
 jobs:
   run-api-tests:
